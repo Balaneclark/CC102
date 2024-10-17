@@ -7,7 +7,7 @@ int main()
 	double sugarPriceUSD, ricePricePound, sardinesPricePound, coffePriceUSD, milkPriceUSD;
 	float sugarQty, riceQty, sardinesQty, coffeQty, milkQty; 
 	float totalCostPHP, sugarCostPHP, riceCostPHP, sardinesCostPHP, coffeCostPHP, milkCostPHP;
-	double usdToPhp = 50.0, poundToPhp = 72.0;
+	double usdToPhp, poundToPhp;
 	
 	cout << "Enter sugar price USD" << endl;
 	cin >> sugarPriceUSD;
@@ -29,7 +29,7 @@ int main()
 	cin >> milkPriceUSD;
 	cout << "Enter milk Quantity" << endl;
 	cin >> milkQty;
-	
+
 	totalCostPHP = sugarPriceUSD * coffePriceUSD * milkPriceUSD * ricePricePound * sardinesPricePound;
 	totalCostPHP = sugarCostPHP + riceCostPHP + sardinesCostPHP + coffeCostPHP + milkCostPHP;
 	totalCostPHP = (usdToPhp * poundToPhp);
